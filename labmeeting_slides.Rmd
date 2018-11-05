@@ -1,0 +1,144 @@
+---
+title: "Labmeeting - Introduction Github"
+author: "Christin Zasada, Kempa Lab"
+date: "06/11/2018"
+output: 
+  ioslides_presentation:
+    widescreen: true
+    css: shiny-slides.css
+    logo: images/gitcircle.png
+    self_contained: no
+    incremental: true
+---
+
+# Overview
+
+## Outline
+
+* What is version control?
+* What is Git?
+* What is Github?
+* Why do we want to use github?
+* Basic concepts of github
+* Important terminology of git
+* How to use github in Rstudio
+* Practical session
+
+# Theoretical key facts
+
+## What is version control? (1)
+
+![versioncontrol](images/phd101212s.gif)
+
+
+## What is version control? (2)
+
+* A system that keeps records of your changes
+* Allows for collaborative development
+* Allows you to know who made what changes and when
+* Allows you to revert any changes and go back to previous states
+
+## Git - Introduction (1)
+
+* DVCS = Distributed Version Control System
+* Started in 2005
+* Created by Linus Torvald to aid in Linux kernel development
+* Users keep entire code and history on their local machines
+    - Offline work possible
+    - Pushing \& pulling from remote server
+
+    
+
+## Git - Introduction (2)
+
+* Consists of two parts
+    - "Database" to hold project history
+    - Set of tools to interact with database (command line, GUI)
+* Technique for managing coding projects:
+    - Large: Yahoo, twitter
+    - Small: Me > 1 mio other people
+
+## GitHub
+
+* Founded in 2008
+* Largest web-based git repository hosting service
+* Allows for code collaboration with anyone online
+* Provides extra functionality, e.g. bug tracking, documentation, Wiki
+* Plenty of additional resources: guides.github.com and tutorials
+
+# Why do we want to use Github?
+
+## Welcome to - [KempaLab](https://github.com/KempaLab/)
+
+* Platform-independent lab repository 
+* Good practices in R programming \& RStudio
+* Co-working projects for:
+    - Protocols
+    - Documentation
+    - Data analysis \& visualisation
+    - Coding
+    - Reports
+
+# Basic concepts \& terminology
+
+## Terminology
+
+* Repository
+* Cloning
+* Staging
+* Commit
+* remote vs. local
+* Push vs. pull
+* Branching
+* Merging
+
+
+## Commits - snapshots of your project (1)
+
+![commit1](images/git01.pdf)
+
+## Commits - snapshots of your project (2)
+![commit1](images/git02.pdf)
+
+
+## Repositories
+![commit1](images/git03.pdf)
+
+
+## Cloning - copy remote repos to local machines
+![commit1](images/git04.pdf)
+
+## Pulling vs. Pushing
+![commit1](images/git05.pdf)
+
+# The classical workflow - creating a new commit
+
+## Starting place - your work directory
+![commit1](images/git08.pdf)
+
+## Add new files - staging
+![commit1](images/git09.pdf)
+
+## Create a new commit
+![commit1](images/git10.pdf)
+
+## Push your local updates to a remote
+![commit1](images/git11.pdf)
+
+# Github concept of branches
+
+## Branching structure
+
+* Complex branch structure possible
+* Main branch called _master_
+![commit1](images/git06.pdf)
+
+## Merging branches
+
+* Integration of new features into master branch
+* `git merge master new-feature
+![commit1](images/git07.pdf)
+
+
+
+

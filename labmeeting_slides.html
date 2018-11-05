@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Labmeeting - Introduction Github</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+  <meta name="date" content="2018-06-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Labmeeting - Introduction Github',
+                        useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                        favIcon: 'labmeeting_slides_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Christin Zasada, Kempa Lab' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="labmeeting_slides_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="labmeeting_slides_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="labmeeting_slides_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="labmeeting_slides_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="labmeeting_slides_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="labmeeting_slides_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="labmeeting_slides_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="labmeeting_slides_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="labmeeting_slides_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="labmeeting_slides_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
+    }
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(labmeeting_slides_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+  <link rel="stylesheet" href="shiny-slides.css" type="text/css" />
+
+</head>
+
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="labmeeting_slides_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">06/11/2018</p>
+          </hgroup>
+  </slide>
+
+<slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Overview</h2></hgroup><article  id="overview">
+
+</article></slide><slide class=""><hgroup><h2>Outline</h2></hgroup><article  id="outline">
+
+<ul class = 'build'>
+<li>What is version control?</li>
+<li>What is Git?</li>
+<li>What is Github?</li>
+<li>Why do we want to use github?</li>
+<li>Basic concepts of github</li>
+<li>Important terminology of git</li>
+<li>How to use github in Rstudio</li>
+<li>Practical session</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Theoretical key facts</h2></hgroup><article  id="theoretical-key-facts">
+
+</article></slide><slide class=""><hgroup><h2>What is version control? (1)</h2></hgroup><article  id="what-is-version-control-1">
+
+<img src='images/phd101212s.gif' title='fig:'/><p class='caption'>versioncontrol</p>
+
+</article></slide><slide class=""><hgroup><h2>What is version control? (2)</h2></hgroup><article  id="what-is-version-control-2">
+
+<ul class = 'build'>
+<li>A system that keeps records of your changes</li>
+<li>Allows for collaborative development</li>
+<li>Allows you to know who made what changes and when</li>
+<li>Allows you to revert any changes and go back to previous states</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Git - Introduction (1)</h2></hgroup><article  id="git---introduction-1">
+
+<ul class = 'build'>
+<li>DVCS = Distributed Version Control System</li>
+<li>Started in 2005</li>
+<li>Created by Linus Torvald to aid in Linux kernel development</li>
+<li>Users keep entire code and history on their local machines
+
+<ul class = 'build'>
+<li>Offline work possible</li>
+<li>Pushing &amp; pulling from remote server</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Git - Introduction (2)</h2></hgroup><article  id="git---introduction-2">
+
+<ul class = 'build'>
+<li>Consists of two parts
+
+<ul class = 'build'>
+<li>&quot;Database&quot; to hold project history</li>
+<li>Set of tools to interact with database (command line, GUI)</li>
+</ul></li>
+<li>Technique for managing coding projects:
+
+<ul class = 'build'>
+<li>Large: Yahoo, twitter</li>
+<li>Small: Me &gt; 1 mio other people</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>GitHub</h2></hgroup><article  id="github">
+
+<ul class = 'build'>
+<li>Founded in 2008</li>
+<li>Largest web-based git repository hosting service</li>
+<li>Allows for code collaboration with anyone online</li>
+<li>Provides extra functionality, e.g. bug tracking, documentation, Wiki</li>
+<li>Plenty of additional resources: guides.github.com and tutorials</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Why do we want to use Github?</h2></hgroup><article  id="why-do-we-want-to-use-github">
+
+</article></slide><slide class=""><hgroup><h2>Welcome to - <a href='https://github.com/KempaLab/' title=''>KempaLab</a></h2></hgroup><article  id="welcome-to---kempalab">
+
+<ul class = 'build'>
+<li>Platform-independent lab repository</li>
+<li>Good practices in R programming &amp; RStudio</li>
+<li>Co-working projects for:
+
+<ul class = 'build'>
+<li>Protocols</li>
+<li>Documentation</li>
+<li>Data analysis &amp; visualisation</li>
+<li>Coding</li>
+<li>Reports</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Basic concepts &amp; terminology</h2></hgroup><article  id="basic-concepts-terminology">
+
+</article></slide><slide class=""><hgroup><h2>Terminology</h2></hgroup><article  id="terminology">
+
+<ul class = 'build'>
+<li>Repository</li>
+<li>Cloning</li>
+<li>Staging</li>
+<li>Commit</li>
+<li>remote vs. local</li>
+<li>Push vs. pull</li>
+<li>Branching</li>
+<li>Merging</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Commits - snapshots of your project (1)</h2></hgroup><article  id="commits---snapshots-of-your-project-1">
+
+<img src='images/git01.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Commits - snapshots of your project (2)</h2></hgroup><article  id="commits---snapshots-of-your-project-2">
+
+<img src='images/git02.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Repositories</h2></hgroup><article  id="repositories">
+
+<img src='images/git03.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Cloning - copy remote repos to local machines</h2></hgroup><article  id="cloning---copy-remote-repos-to-local-machines">
+
+<img src='images/git04.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Pulling vs. Pushing</h2></hgroup><article  id="pulling-vs.-pushing">
+
+<img src='images/git05.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>The classical workflow - creating a new commit</h2></hgroup><article  id="the-classical-workflow---creating-a-new-commit">
+
+</article></slide><slide class=""><hgroup><h2>Starting place - your work directory</h2></hgroup><article  id="starting-place---your-work-directory">
+
+<img src='images/git08.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Add new files - staging</h2></hgroup><article  id="add-new-files---staging">
+
+<img src='images/git09.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Create a new commit</h2></hgroup><article  id="create-a-new-commit">
+
+<img src='images/git10.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Push your local updates to a remote</h2></hgroup><article  id="push-your-local-updates-to-a-remote">
+
+<img src='images/git11.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Github concept of branches</h2></hgroup><article  id="github-concept-of-branches">
+
+</article></slide><slide class=""><hgroup><h2>Branching structure</h2></hgroup><article  id="branching-structure">
+
+<ul class = 'build'>
+<li>Complex branch structure possible</li>
+<li>Main branch called <em>master</em> <img src='images/git06.pdf' title=''/></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Merging branches</h2></hgroup><article  id="merging-branches">
+
+<ul class = 'build'>
+<li>Integration of new features into master branch</li>
+<li><code>git merge master new-feature</code> <img src='images/git07.pdf' title=''/></li>
+</ul></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
