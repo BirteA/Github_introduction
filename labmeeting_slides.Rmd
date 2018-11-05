@@ -125,18 +125,24 @@ output:
 ## Push your local updates to a remote
 ![commit1](images/git11.pdf)
 
-# Github concept of branches
+# Github concept of branches and merging
 
-## Branching structure
+## Branching (1)
 
-* Complex branch structure possible
-* Main branch called _master_
+* Branches allow you to move back and forth between 'states' of a project. 
+* For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. Once you're done with the page, you can merge your changes from your branch into the master branch. 
+* When you create a new branch, Git keeps track of which commit your branch 'branched' off of, so it knows the history behind all the files. 
+
+
+## Branching (2)
+![commit1](images/git05.pdf)
+## Branching (3)
 ![commit1](images/git06.pdf)
 
 ## Merging branches
 
 * Integration of new features into master branch
-* `git merge master new-feature
+* `git merge master new-feature`
 ![commit1](images/git07.pdf)
 
 
