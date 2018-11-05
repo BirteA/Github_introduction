@@ -103,7 +103,7 @@
 
 <body style="opacity: 0">
 
-<slides class="layout-widescreen">
+<slides>
 
   <slide class="title-slide segue nobackground">
         <aside class="gdbar"><img src="labmeeting_slides_files/logo.png"></aside>
@@ -222,41 +222,41 @@
 
 </article></slide><slide class=""><hgroup><h2>Commits - snapshots of your project (1)</h2></hgroup><article  id="commits---snapshots-of-your-project-1">
 
-<img src='images/git01.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git001.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class=""><hgroup><h2>Commits - snapshots of your project (2)</h2></hgroup><article  id="commits---snapshots-of-your-project-2">
 
-<img src='images/git02.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git002.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class=""><hgroup><h2>Repositories</h2></hgroup><article  id="repositories">
 
-<img src='images/git03.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git003.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class=""><hgroup><h2>Cloning - copy remote repos to local machines</h2></hgroup><article  id="cloning---copy-remote-repos-to-local-machines">
 
-<img src='images/git04.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git004.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class=""><hgroup><h2>Pulling vs. Pushing</h2></hgroup><article  id="pulling-vs.-pushing">
 
-<img src='images/git05.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git005.pdf' title='fig:'/><p class='caption'>commit1</p>
 
-</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>The classical workflow - creating a new commit</h2></hgroup><article  id="the-classical-workflow---creating-a-new-commit">
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>The classical workflow</h2></hgroup><article  id="the-classical-workflow">
 
 </article></slide><slide class=""><hgroup><h2>Starting place - your work directory</h2></hgroup><article  id="starting-place---your-work-directory">
 
-<img src='images/git08.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git006.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class=""><hgroup><h2>Add new files - staging</h2></hgroup><article  id="add-new-files---staging">
 
-<img src='images/git09.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git007.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class=""><hgroup><h2>Create a new commit</h2></hgroup><article  id="create-a-new-commit">
 
-<img src='images/git10.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git008.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class=""><hgroup><h2>Push your local updates to a remote</h2></hgroup><article  id="push-your-local-updates-to-a-remote">
 
-<img src='images/git11.pdf' title='fig:'/><p class='caption'>commit1</p>
+<img src='images/git009.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Github concept of branches and merging</h2></hgroup><article  id="github-concept-of-branches-and-merging">
 
@@ -264,19 +264,34 @@
 
 <ul class = 'build'>
 <li>Branches allow you to move back and forth between &#39;states&#39; of a project.</li>
-<li>For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. Once you&#39;re done with the page, you can merge your changes from your branch into the master branch.</li>
+<li>For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project.</li>
+<li>Once you&#39;re done with the page, you can merge your changes from your branch into the master branch.</li>
 <li>When you create a new branch, Git keeps track of which commit your branch &#39;branched&#39; off of, so it knows the history behind all the files.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Branching (2)</h2></hgroup><article  id="branching-2">
 
-<p><img src='images/git05.pdf' title=''/> ## Branching (3) <img src='images/git06.pdf' title=''/></p>
+<img src='images/git010.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Branching (3)</h2></hgroup><article  id="branching-3">
+
+<img src='images/git011.pdf' title='fig:'/><p class='caption'>commit1</p>
 
 </article></slide><slide class=""><hgroup><h2>Merging branches</h2></hgroup><article  id="merging-branches">
 
+<img src='images/git012.pdf' title='fig:'/><p class='caption'>commit1</p>
+
+</article></slide><slide class=""><hgroup><h2>Summary - terminology</h2></hgroup><article  id="summary---terminology">
+
 <ul class = 'build'>
-<li>Integration of new features into master branch</li>
-<li><code>git merge master new-feature</code> <img src='images/git07.pdf' title=''/></li>
+<li><em>repository</em> (repo): Your git project - remote or local</li>
+<li><em>commit</em>: a snapshot of your project at time point x</li>
+<li><em>branch</em>: your git project in a new context</li>
+<li><em>clone</em>: copy a remote repo to a local machine</li>
+<li><em>push</em>: upload local changes to a remote repo</li>
+<li><em>pull</em>: download updates from a remote repo</li>
+<li><em>stage</em>: add modified content from your working directory for commit</li>
+<li><em>merge</em>: integrate a branch into another</li>
 </ul></article></slide>
 
 

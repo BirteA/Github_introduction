@@ -4,7 +4,7 @@ author: "Christin Zasada, Kempa Lab"
 date: "06/11/2018"
 output: 
   ioslides_presentation:
-    widescreen: true
+    widescreen: false
     css: shiny-slides.css
     logo: images/gitcircle.png
     self_contained: no
@@ -95,55 +95,66 @@ output:
 
 ## Commits - snapshots of your project (1)
 
-![commit1](images/git01.pdf)
+![commit1](images/git001.pdf)
 
 ## Commits - snapshots of your project (2)
-![commit1](images/git02.pdf)
+![commit1](images/git002.pdf)
 
 
 ## Repositories
-![commit1](images/git03.pdf)
+![commit1](images/git003.pdf)
 
 
 ## Cloning - copy remote repos to local machines
-![commit1](images/git04.pdf)
+![commit1](images/git004.pdf)
 
 ## Pulling vs. Pushing
-![commit1](images/git05.pdf)
+![commit1](images/git005.pdf)
 
-# The classical workflow - creating a new commit
+# The classical workflow
 
 ## Starting place - your work directory
-![commit1](images/git08.pdf)
+![commit1](images/git006.pdf)
 
 ## Add new files - staging
-![commit1](images/git09.pdf)
+![commit1](images/git007.pdf)
 
 ## Create a new commit
-![commit1](images/git10.pdf)
+![commit1](images/git008.pdf)
 
 ## Push your local updates to a remote
-![commit1](images/git11.pdf)
+![commit1](images/git009.pdf)
 
 # Github concept of branches and merging
 
 ## Branching (1)
 
 * Branches allow you to move back and forth between 'states' of a project. 
-* For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. Once you're done with the page, you can merge your changes from your branch into the master branch. 
+* For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. 
+* Once you're done with the page, you can merge your changes from your branch into the master branch. 
 * When you create a new branch, Git keeps track of which commit your branch 'branched' off of, so it knows the history behind all the files. 
 
 
 ## Branching (2)
-![commit1](images/git05.pdf)
+![commit1](images/git010.pdf)
+
 ## Branching (3)
-![commit1](images/git06.pdf)
+![commit1](images/git011.pdf)
 
 ## Merging branches
+![commit1](images/git012.pdf)
 
-* Integration of new features into master branch
-* `git merge master new-feature`
-![commit1](images/git07.pdf)
+
+## Summary - terminology
+
+* _repository_ (repo): Your git project - remote or local
+* _commit_: a snapshot of your project at time point x
+* _branch_: your git project in a new context
+* _clone_: copy a remote repo to a local machine
+* _push_: upload local changes to a remote repo
+* _pull_: download updates from a remote repo
+* _stage_: add modified content from your working directory for commit
+* _merge_: integrate a branch into another 
 
 
 
