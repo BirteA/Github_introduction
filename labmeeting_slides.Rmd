@@ -186,6 +186,6 @@ output:
 * Clone this repository to your computer
 * Modify the file, save it and push it to the remote
 
-# Fin
+# Done!
 
 
