@@ -125,6 +125,10 @@ output:
 ## Push your local updates to a remote
 ![commit1](images/git009.pdf)
 
+## Push your local updates to a remote
+![commit1](images/git009b.pdf)
+
+
 # Github concept of branches and merging
 
 ## Branching (1)
@@ -141,9 +145,6 @@ output:
 ## Branching (3)
 ![commit1](images/git011.pdf)
 
-## Merging branches
-![commit1](images/git012.pdf)
-
 
 ## Summary - terminology
 
@@ -156,6 +157,35 @@ output:
 * _stage_: add modified content from your working directory for commit
 * _merge_: integrate a branch into another 
 
+# Little stories
 
+## Basic concept
+
+![basic](images/git_basic.pdf)
+
+## Collaboration
+
+![basic](images/git_collaboration.pdf)
+
+## Branching
+
+![basic](images/git_branch.pdf)
+
+## Git in RStudio
+
+* Convinient integration in RStudio
+* Either via command line integrated Terminal
+* Or Git pane (upper right)
+
+# Let´s play around
+
+## What we are going to do now
+
+* Explore your github account and browser
+* Create your first repository
+* Clone this repository to your computer
+* Modify the file, save it and push it to the remote
+
+# Fin
 
 
